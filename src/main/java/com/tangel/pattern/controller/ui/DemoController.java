@@ -1,4 +1,4 @@
-package com.tangel.template.controller.ui;
+package com.tangel.pattern.controller.ui;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

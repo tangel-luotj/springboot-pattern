@@ -1,4 +1,4 @@
-package com.tangel.template.config;
+package com.tangel.pattern.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,7 +30,7 @@ public class SwaggerConfig {
                                 .build()
                 )
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.tangel.template"))
+                .apis(RequestHandlerSelectors.basePackage("com.tangel.pattern"))
                 .paths(PathSelectors.any())
                 .build();
     }
