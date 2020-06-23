@@ -5,6 +5,10 @@ springBoot整合23种设计模式实例介绍
 ```
 描述:这些设计模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用 new 运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活。	
 * 工厂模式（Factory Pattern）
+    描述:该模式针对一个接口，有多种不同的实现类，根据不同的需求类型调用不同的实现类，并实现对应的功能
+    model目录下factoryModel为启动类，object/factory目录下为对应的接口和实现类，Shape抽取了实现过程的共有方法，对应三个/impl/目录下的实现类分别实现对应的需求逻辑
+    优点:共用同一个接口，根据需求实现不同的逻辑
+
 * 抽象工厂模式（Abstract Factory Pattern）
 * 单例模式（Singleton Pattern）
 * 建造者模式（Builder Pattern）
