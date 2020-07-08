@@ -15,6 +15,9 @@ public class SluggardSafe {
     private static SluggardSafe sSluggardSafe;
 
     private SluggardSafe() {
+        if (sSluggardSafe != null) {
+            throw new RuntimeException();
+        }
     }
 
     public static synchronized SluggardSafe querySluggarSafe() {

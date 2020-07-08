@@ -15,6 +15,9 @@ public class HungryStyle {
     private static HungryStyle sHungryStyle = new HungryStyle();
 
     private HungryStyle() {
+        if (sHungryStyle != null) {
+            throw new RuntimeException();
+        }
     }
 
     public static HungryStyle queryHungryStyle() {

@@ -13,6 +13,9 @@ public class Sluggard {
     private static Sluggard sMSluggard;
 
     private Sluggard() {
+        if (sMSluggard != null) {
+             throw new RuntimeException();
+        }
     }
 
     public static Sluggard querySingleton() {
