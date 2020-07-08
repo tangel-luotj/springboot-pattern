@@ -10,6 +10,11 @@ springBoot整合23种设计模式实例介绍
     优点:共用同一个接口，根据需求实现不同的逻辑
 
 * 抽象工厂模式（Abstract Factory Pattern）
+    描述:是围绕一个超级工厂创建其他工厂。该超级工厂又称为其他工厂的工厂。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式
+        在抽象工厂模式中，接口是负责创建一个相关对象的工厂，不需要显式指定它们的类。每个生成的工厂都能按照工厂模式提供对象。
+     mode目录下AbstractFactoryModel为启动类，object/abstractFactory目录下为对应的接口和实现类，Shape/Color抽取了实现过程的共有方法，对应六个/impl/目录下的实现类分别实现对应的需求逻辑
+     优点:根据需求调用对应的对象，并可以在对应的对象中实现相应的功能逻辑
+
 * 单例模式（Singleton Pattern）
 * 建造者模式（Builder Pattern）
 * 原型模式（Prototype Pattern）
