@@ -43,14 +43,17 @@ public class SingletonModel {
         style.logInfoToTerminal();
         log.info("校验单例模式--饿汉式逻辑是否正确 : {}", HungryStyle.queryHungryStyle().equals(style));
         log.info("-------------------------------------------------");
+        //第四种模式,双检锁/双重校验锁
         DoubleCheck doubleCheck = DoubleCheck.queryDoubleCheck();
         doubleCheck.logInfoToTerminal();
         log.info("校验单例模式--双检锁/双重检验锁逻辑是否正确 : {}", DoubleCheck.queryDoubleCheck().equals(doubleCheck));
         log.info("-------------------------------------------------");
+        //第五种模式,登记式/静态内部类
         Registration registration = Registration.queryRegistrationSingleton();
         registration.logInfoToTerminal();
         log.info("校验单例模式--登记式/静态内部类逻辑是否正确 : {}", Registration.queryRegistrationSingleton().equals(registration));
         log.info("-------------------------------------------------");
+        //第六种模式,枚举式
         EnumStyle enumStyle = EnumStyle.Instant;
         enumStyle.logInfoToTerminal();
         log.info("校验单例模式--枚举式逻辑是否正确 : {}", EnumStyle.Instant.equals(enumStyle));

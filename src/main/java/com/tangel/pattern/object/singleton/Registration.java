@@ -1,6 +1,5 @@
 package com.tangel.pattern.object.singleton;
 
-import com.sun.tools.classfile.ConstantPool;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -18,6 +17,9 @@ public class Registration {
     }
 
     private Registration() {
+        if (SingletonHolder.registration != null) {
+            throw new RuntimeException();
+        }
     }
 
     public static Registration queryRegistrationSingleton() {

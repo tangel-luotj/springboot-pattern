@@ -14,6 +14,9 @@ public class DoubleCheck {
     private static DoubleCheck sDoubleCheck;
 
     private DoubleCheck() {
+        if (sDoubleCheck != null) {
+            throw new RuntimeException();
+        }
     }
 
     public static DoubleCheck queryDoubleCheck() {
