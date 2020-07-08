@@ -13,7 +13,7 @@ public class DoubleCheck {
 
     private static DoubleCheck sDoubleCheck;
 
-    public DoubleCheck() {
+    private DoubleCheck() {
     }
 
     public static DoubleCheck queryDoubleCheck() {

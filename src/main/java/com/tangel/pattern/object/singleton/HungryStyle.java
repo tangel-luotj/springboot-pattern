@@ -14,7 +14,7 @@ public class HungryStyle {
     //直接创建
     private static HungryStyle sHungryStyle = new HungryStyle();
 
-    public HungryStyle() {
+    private HungryStyle() {
     }
 
     public static HungryStyle queryHungryStyle() {

@@ -12,7 +12,7 @@ public class Sluggard {
 
     private static Sluggard sMSluggard;
 
-    public Sluggard() {
+    private Sluggard() {
     }
 
     public static Sluggard querySingleton() {
