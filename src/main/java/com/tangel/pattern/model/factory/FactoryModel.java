@@ -1,4 +1,4 @@
-package com.tangel.pattern.model;
+package com.tangel.pattern.model.factory;
 
 import com.tangel.pattern.object.factory.Shape;
 import com.tangel.pattern.object.factory.impl.CircleShape;
