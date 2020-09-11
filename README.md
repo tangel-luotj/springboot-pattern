@@ -60,6 +60,10 @@ springBoot整合23种设计模式实例介绍
     model目录下nullObject/NullObejctModel为启动类，NullObejctFactory为该实例的工厂封装，object/nullObject目录下为对应的实现逻辑。
 
 * 策略模式（Strategy Pattern）
+    描述:为了简化代码中的if else结构就可以使用该模式进行书写咋们的代码
+    model目录下strategy/StrategyModel为启动类，分别根据实现逻辑调用对应的功能策略,object/strategy目录下,StrategyLogic为逻辑分配调用类，
+   StrategyFather则为策略接口,对应下面StrategyA、StrategyB....则为实现类处理业务逻辑,拓展性强,新增业务逻辑的情况下新增多一个实现类即可。
+
 * 模板模式（Template Pattern）
 * 访问者模式（Visitor Pattern）
 ```
