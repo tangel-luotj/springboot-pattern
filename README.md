@@ -1,5 +1,5 @@
-# springBoot整合23种设计模式实例介绍
-springBoot整合23种设计模式实例介绍
+# springBoot整合设计模式实例介绍
+springBoot整合设计模式实例介绍
 
 创建型模式
 ```
