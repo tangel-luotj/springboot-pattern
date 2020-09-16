@@ -65,6 +65,10 @@ springBoot整合设计模式实例介绍
    StrategyFather则为策略接口,对应下面StrategyA、StrategyB....则为实现类处理业务逻辑,拓展性强,新增业务逻辑的情况下新增多一个实现类即可。
 
 * 模板模式（Template Pattern）
+    描述:模版模式就是为了将公共有的代码抽取出来并封装到一个抽象类中，在需求中需要地方可以直接继承自该方法，并可以针对已有的方法进行增强,
+    model目录下template/TemplateModel为启动类,创建实现类调用对应的方法进行增强,object/template目录下,Game为该模型的抽象方法抽取需求中共有方法
+    /impl/目录下为Game的继承类，并重写抽象类中的抽象方法，当前抽象方法就是我们的共有的代码需求。
+
 * 访问者模式（Visitor Pattern）
 ```
 
